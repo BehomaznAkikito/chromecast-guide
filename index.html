@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chromecast Display Guide / Chromecast搭載ディスプレイの使い方</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* language switching: only the active language is shown */
+  html[lang="en"] [lang="ja"], html[lang="ja"] [lang="en"] { display: none !important; }
+  .langswitch { position: fixed; top: 12px; right: 12px; z-index: 200; display: flex; background: #fff; border: 1px solid var(--line); border-radius: 999px; box-shadow: 0 2px 8px rgba(20,40,60,.15); overflow: hidden; }
+  .langswitch button { border: none; background: none; padding: 7px 14px; font-size: .85rem; font-weight: 700; color: var(--muted); cursor: pointer; }
+  .langswitch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  ol.steps > li { margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<div class="langswitch" role="group" aria-label="Language">
+  <button type="button" data-lang="en" aria-pressed="true">English</button>
+  <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+</div>
+
+<header class="hero">
+  <h1 lang="en">Chromecast Display Guide</h1>
+  <h1 lang="ja">Chromecast搭載ディスプレイの使い方</h1>
+  <p lang="en">How to connect your smartphone to the Chromecast linked to the display</p>
+  <p lang="ja">ディスプレイに接続されたChromecastにスマートフォンをつなぐ方法</p>
+</header>
+
+<nav>
+  <div class="inner">
+    <a href="#setup"><span lang="en">Setup</span><span lang="ja">初回セットアップ</span></a>
+    <a href="#cast"><span lang="en">Casting</span><span lang="ja">キャストする</span></a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===================== SETUP ===================== -->
+  <section id="setup">
+    <h2><span class="emoji">📱</span> <span lang="en">First-time setup</span><span lang="ja">初回セットアップ</span></h2>
+
+    <div class="card split">
+      <div>
+        <span class="tag" lang="en">Steps 1–5</span><span class="tag" lang="ja">手順 1〜5</span>
+        <ol class="steps">
+          <li lang="en">Turn on the display with the connected Chromecast. Take note of the <strong>Wi‑Fi address</strong> shown in the bottom left corner of the initial screen, and connect your smartphone to the <strong>same Wi‑Fi network</strong>.</li>
+          <li lang="ja">Chromecastが接続されたディスプレイの電源を入れます。最初の画面の<strong>左下に表示されるWi‑Fi名</strong>を確認し、スマートフォンを<strong>同じWi‑Fiネットワーク</strong>に接続します。</li>
+
+          <li lang="en">Install the <strong>Google Home</strong> app on your smartphone from the App Store (iOS) or Google Play Store (Android).</li>
+          <li lang="ja">スマートフォンに、App Store（iOS）またはGoogle Playストア（Android）から<strong>Google Home</strong>アプリをインストールします。</li>
+
+          <li lang="en">Open the Google Home app and tap the <strong>“+”</strong> button in the top left corner of the screen.</li>
+          <li lang="ja">Google Homeアプリを開き、画面左上の<strong>「+」</strong>ボタンをタップします。</li>
+
+          <li lang="en">Select <strong>“Set up device”</strong>, then choose <strong>“New device”</strong>.</li>
+          <li lang="ja"><strong>「デバイスをセットアップ」</strong>を選び、続いて<strong>「新しいデバイス」</strong>を選択します。</li>
+
+          <li lang="en">The app starts searching for nearby devices. When it detects the Chromecast, tap it to begin setup.</li>
+          <li lang="ja">アプリが近くのデバイスを検索します。Chromecastが見つかったらタップして、セットアップを始めます。</li>
+        </ol>
+      </div>
+      <figure>
+        <img src="images/google-home-icon.png" alt="Google Home app icon">
+        <figcaption lang="en">Look for the Google Home app icon.</figcaption>
+        <figcaption lang="ja">Google Homeアプリのアイコンが目印です。</figcaption>
+      </figure>
+    </div>
+
+    <div class="card">
+      <span class="tag" lang="en">Steps 6–7</span><span class="tag" lang="ja">手順 6〜7</span>
+      <ol class="steps" start="6">
+        <li lang="en">Follow the on-screen instructions to configure the Chromecast. You may be asked to <strong>enter a code displayed on the TV screen</strong> to verify the connection.</li>
+        <li lang="ja">画面の指示に従ってChromecastを設定します。接続確認のため、<strong>テレビ画面に表示されるコードの入力</strong>を求められる場合があります。</li>
+
+        <li lang="en">Once setup is complete, you can rename the Chromecast so it is easy to identify later.</li>
+        <li lang="ja">セットアップが完了したら、後で見分けやすいようにChromecastの名前を変更できます。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== CAST ===================== -->
+  <section id="cast">
+    <h2><span class="emoji">📺</span> <span lang="en">Casting from your smartphone</span><span lang="ja">スマートフォンからキャストする</span></h2>
+
+    <div class="card split rev">
+      <figure>
+        <img src="images/cast-button.png" alt="Cast icon in the Prime Video app">
+        <figcaption lang="en">The Cast icon (circled in red) in Prime Video.</figcaption>
+        <figcaption lang="ja">Prime Videoのキャストアイコン（赤丸）。</figcaption>
+      </figure>
+      <div>
+        <span class="tag" lang="en">Steps 8–10</span><span class="tag" lang="ja">手順 8〜10</span>
+        <ol class="steps" start="8">
+          <li lang="en">Open a supported app (such as Netflix, Amazon Prime Video, or YouTube Premium) and look for the <strong>Cast icon</strong> — a rectangle with a Wi‑Fi symbol in its bottom left corner.</li>
+          <li lang="ja">対応アプリ（Netflix、Amazon Prime Video、YouTube Premiumなど）を開き、<strong>キャストアイコン</strong>（四角形の左下にWi‑Fiマークが付いたアイコン）を探します。</li>
+
+          <li lang="en">Tap the Cast icon and select the Chromecast you just set up.</li>
+          <li lang="ja">キャストアイコンをタップし、先ほど設定したChromecastを選びます。</li>
+
+          <li lang="en">The content starts streaming from your smartphone to the display connected to the Chromecast.</li>
+          <li lang="ja">スマートフォンから、Chromecastにつながったディスプレイへ映像の再生が始まります。</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card split">
+      <div>
+        <span class="tag" lang="en">Tip</span><span class="tag" lang="ja">ポイント</span>
+        <h3 lang="en">Cast icon in YouTube</h3>
+        <h3 lang="ja">YouTubeのキャストアイコン</h3>
+        <p lang="en">In YouTube and other apps, the Cast icon appears on the video player screen in the same shape.</p>
+        <p lang="ja">YouTubeなどのアプリでも、動画プレーヤー画面に同じ形のキャストアイコンが表示されます。</p>
+      </div>
+      <figure>
+        <img src="images/cast-icon.jpg" alt="Cast icon in the YouTube app">
+        <figcaption lang="en">Tap this cast icon in apps like YouTube.</figcaption>
+        <figcaption lang="ja">YouTubeなどのアプリではこのアイコンをタップします。</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <p lang="en"><strong>Note:</strong> Make sure you are logged in to your Netflix, Amazon Prime Video, YouTube Premium, or other streaming service account to access your subscribed content and start casting to the Chromecast-enabled display.</p>
+      <p lang="ja"><strong>ご注意：</strong>Netflix、Amazon Prime Video、YouTube Premiumなどの動画サービスは、ご自身のアカウントでログインしておくと、契約中のコンテンツをChromecast搭載ディスプレイにキャストできます。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span lang="en">Akikito apt. — Chromecast Display Guide</span>
+  <span lang="ja">Akikito apt. — Chromecast搭載ディスプレイの使い方</span>
+</footer>
+
+<button id="backToTop" aria-label="Back to top" title="Back to top"><img src="images/upBtn.svg" alt=""></button>
+
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const buttons = document.querySelectorAll('.langswitch button');
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.title = lang === 'ja' ? 'Chromecast搭載ディスプレイの使い方' : 'Chromecast Display Guide';
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+  buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let initial = (navigator.language || '').startsWith('ja') ? 'ja' : 'en';
+  try { initial = localStorage.getItem('lang') || initial; } catch (e) {}
+  setLang(initial);
+</script>
+
+</body>
+</html>
